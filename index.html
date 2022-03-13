@@ -10,8 +10,22 @@
   <body>
     <form action="/login" method="post">
       <div class="container">
-        <label for="">username</label>
-        <label for="">password</label>
+        <label><b>username</b></label>
+        <input
+          type="text"
+          placeholder="Enter Username"
+          name="username"
+          required
+        />
+
+        <label><b>password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="password"
+          required
+        />
+        <button type="submit">Login</button>
       </div>
       <script>
         if (document.location.hash === "#unauthorized") {
